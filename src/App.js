@@ -1,14 +1,13 @@
 import logo from './logo.svg';
-import './App.css';
-import Signup from './Components/Signup';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Search from './components/Search';
 
 function App() {
   return (
     
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<Signup/>}/>
+      <Route path='/' element={<Search/>}/>
     </Routes>
     </BrowserRouter>
     
