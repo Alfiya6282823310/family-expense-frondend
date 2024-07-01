@@ -1,26 +1,20 @@
-login
-
-import './App.css';
-import SignIn from './components/SignIn';
-
-function App() {
-  return (
-      <SignIn/>
-
 import logo from './logo.svg';
+import './App.css';
+import SignIn from './Components/SignIn';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Search from './components/Search';
+import Signup from './Components/Signup';
 
 function App() {
   return (
     
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<Search/>}/>
+      <Route path='/' element={<SignIn/>}/>
+      <Route path='/signup' element={<Signup/>}/>
+
     </Routes>
     </BrowserRouter>
     
- development
   );
 }
 

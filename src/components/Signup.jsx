@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Signup.css'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 const Signup = () => {
   const [data,setData]=useState(
     {
@@ -77,9 +78,9 @@ const readValue=()=>{
                    <button className="btn btn-info" onClick={readValue}>Signup</button>
 
                     </div>
-                    <p>Already have an account?</p>
+                    <div><br></br></div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                   <button className="btn btn-success"onClick={readValue}>Login</button>
+                    Already have an account?<Link to='/'>Sign in</Link>
 
                     </div>
                     </center>
