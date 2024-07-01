@@ -11,10 +11,6 @@ const Add = () => {
     <div className="row g-3">
         <center><h1>Add Expense</h1></center>
         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <label htmlFor="" className="form-label">Date</label>
-            <input type="date" name="" id="" className="form-control" />
-        </div><br></br>
-        <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <label htmlFor="" className="form-label">Month</label>
             <select name="" id="" className="form-control">
                 <option value="">--select--</option>
