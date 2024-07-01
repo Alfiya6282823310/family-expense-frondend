@@ -23,7 +23,7 @@ const Navbar = () => {
             Home</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="#"><img src="https://tse2.mm.bing.net/th?id=OIP.UEvGLS_dvg5bZJTwSyZrZgAAAA&pid=Api&P=0&h=220" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/>Add Expense</Link>
+          <Link class="nav-link" to="/add"><img src="https://tse2.mm.bing.net/th?id=OIP.UEvGLS_dvg5bZJTwSyZrZgAAAA&pid=Api&P=0&h=220" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/>Add Expense</Link>
         </li>
         <li class="nav-item dropdown">
           <Link class="nav-link dropdown" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
