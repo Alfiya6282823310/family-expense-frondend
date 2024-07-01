@@ -15,12 +15,46 @@ const Add = () => {
             <input type="date" name="" id="" className="form-control" />
         </div><br></br>
         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label htmlFor="" className="form-label">Month</label>
+            <select name="" id="" className="form-control">
+                <option value="">--select--</option>
+                <option value="">January</option>
+                <option value="">February</option>
+                <option value="">March</option>
+                <option value="">April</option>
+                <option value="">May</option>
+                <option value="">June</option>
+                <option value="">July</option>
+                <option value="">August</option>
+                <option value="">September</option>
+                <option value="">October</option>
+                <option value="">November</option>
+                <option value="">December</option>
+            </select>
+        </div><br></br>
+        <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label htmlFor="" className="form-label">Year</label>
+            <select name="" id="" className="form-control">
+                <option value="">--select--</option>
+                <option value="">2023</option>
+                <option value="">2024</option>
+                <option value="">2025</option>
+                <option value="">2026</option>
+                <option value="">2027</option>
+                <option value="">2028</option>
+                <option value="">2029</option>
+                <option value="">2030</option>
+                <option value="">Others</option>
+            </select>
+        </div><br></br>
+        <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <label htmlFor="" className="form-label">Amount</label>
             <input type="text" placeholder='Enter Amount' className="form-control" />
         </div><br></br>
         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <label htmlFor="" className="form-label">Category</label>
             <select name="" id="" className="form-control">
+                <option value="">--select--</option>
                 <option value="">Health</option>
                 <option value="">Education</option>
                 <option value="">Clothing</option>
