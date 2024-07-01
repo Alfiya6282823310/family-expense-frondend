@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Signup from './components/Signup';
 import Search from './components/Search';
 import Add from './components/Add';
+import Home from './components/Home';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Route path='/' element={<SignIn/>}/>
      <Route path='/signup' element={<Signup/>}/>
      <Route path='/search' element={<Search/>}/>
-     <Route path='/add' element={<Add/>}/>
+     <Route path='/add' element={<Home/>}/>
 
 
     </Routes>
