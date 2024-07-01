@@ -1,10 +1,12 @@
 import React from 'react'
 
+
 const Navbar = () => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg bg-info">
   <div class="container-fluid">
+
     <a class="navbar-brand">
     <img src="https://tse2.mm.bing.net/th?id=OIP.3AMgj7LY0xSRf0o_Av9DawHaHa&pid=Api&P=0&h=220" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/>
       Expense Tracker</a>
@@ -14,6 +16,7 @@ const Navbar = () => {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
+
           <a class="nav-link active" aria-current="page" href="#">
           <img src="https://tse4.mm.bing.net/th?id=OIP.WnK1vJs2BjGqyaFWdwdwiwHaHa&pid=Api&P=0&h=220" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/>
             Home</a>
@@ -31,6 +34,7 @@ const Navbar = () => {
             <li><a class="dropdown-item" href="#">Monthwise search</a></li>
             
             <li><a class="dropdown-item" href="#">Yearly Search</a></li>
+
           </ul>
         </li>
 
