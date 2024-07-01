@@ -16,8 +16,8 @@ const inputHandler=(event)=>{
 const readValue=()=>{
     console.log(data)
       axios.post("http://localhost:8080/signin", data).then((response) => {
-          console . log(response.data) 
-          if(response.data.status == "success") {
+          console.log(response.data) 
+          if(response.data.status === "success") {
           alert("Successfully Signed In")
       } else {
           alert("Error")
