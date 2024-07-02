@@ -18,7 +18,7 @@ const Signup = () => {
 const inputHandler=(event)=>{
    setData ({...data,[event.target.name]:event.target.value})
 }
-const readValue=()=>{
+const handleSubmit=()=>{
     console.log(data)
     if (data.password==data.confirmpassword) {
       axios.post("http://localhost:8080/signup", data).then((response) => {
@@ -43,41 +43,43 @@ const readValue=()=>{
                 <div className=" g-3">
                   <center><h1>Sign Up</h1></center>
 
-                  <br></br><center> <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                  <br></br><center> 
+                  <form onSubmit={handleSubmit}>
+                    <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                        
-                         <input type="text" className="form-control" name='fullname' placeholder='Full Name' value={data.fullname} onChange={inputHandler}/>
+                         <input type="text" className="form-control" name='fullname' placeholder='Full Name' value={data.fullname} onChange={inputHandler} required/>
 
                     </div>
 
                    <br></br> <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                           <input type="text" className="form-control" name='email' placeholder='Email' value={data.email} onChange={inputHandler}/>
+                           <input type="text" className="form-control" name='email' placeholder='Email' value={data.email} onChange={inputHandler} required/>
 
                     </div>
 
                     <br></br><div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     
-                       <input type="text" className="form-control" name='username' placeholder='Username' value={data.username} onChange={inputHandler}/>
+                       <input type="text" className="form-control" name='username' placeholder='Username' value={data.username} onChange={inputHandler} required/>
 
                     </div>
 
 
                    <br></br> <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                    <input type="text" className="form-control" name='password' placeholder='Password' value={data.password} onChange={inputHandler}/>
+                    <input type="text" className="form-control" name='password' placeholder='Password' value={data.password} onChange={inputHandler} required/>
 
                     </div>
 
                    <br></br> <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                    <input type="text" className="form-control" name='confirmpassword' placeholder='Confirm Password' value={data.confirmpassword} onChange={inputHandler}/>
+                    <input type="text" className="form-control" name='confirmpassword' placeholder='Confirm Password' value={data.confirmpassword} onChange={inputHandler} required/>
 
                     </div>
                      <br></br>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                   <button className="btn btn-info" onClick={readValue}>Signup</button>
+                   <button className="btn btn-info" type='submit'>Signup</button>
 
                     </div>
                     <div><br></br></div>
@@ -85,6 +87,7 @@ const readValue=()=>{
                     Already have an account?<Link to='/'>Sign in</Link>
 
                     </div>
+                    </form>
                     </center>
                 </div>
             </div>
