@@ -21,6 +21,7 @@ const handleSubmit=async(event)=>{
           console.log(response.data) 
           if(response.data.status === "success") {
           localStorage.setItem('token',response.data.token)
+          localStorage.setItem('username',data.username)
           navigate('/home')
       } else {
           alert("Error")

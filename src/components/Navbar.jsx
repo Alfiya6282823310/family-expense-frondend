@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
+  const username=localStorage.getItem('username')
   return (
     <div>
       <nav class="navbar navbar-expand-lg bg-info">
@@ -43,7 +44,7 @@ const Navbar = () => {
       <li class="nav-item dropdown">
           <Link class="nav-link dropdown" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <img src="https://tse1.mm.bing.net/th?id=OIP.mpXg7tyCFEecqgUsoW9eQwHaHk&pid=Api&P=0&h=220" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/>
-            profile
+            {username}
           </Link>
           <ul class="dropdown-menu">
             <li><Link class="dropdown-item" to="/">Logout</Link></li>
