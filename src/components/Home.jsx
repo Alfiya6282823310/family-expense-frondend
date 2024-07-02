@@ -215,7 +215,7 @@ Practice Management Software||
                                 <div class="col-sm-6">
                                     <div class="card text-bg-success mb-3">
                                         <div class="card-body">
-                                            
+                    
                                             <p class="card-text">customizable spend controls</p>
                                         </div>
                                     </div>
