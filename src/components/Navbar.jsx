@@ -18,7 +18,7 @@ const Navbar = () => {
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
 
-          <Link class="nav-link active" aria-current="page" to="#">
+          <Link class="nav-link active" aria-current="page" to="/home">
           <img src="https://tse4.mm.bing.net/th?id=OIP.WnK1vJs2BjGqyaFWdwdwiwHaHa&pid=Api&P=0&h=220" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/>
             Home</Link>
         </li>
@@ -46,7 +46,7 @@ const Navbar = () => {
             Profile
           </Link>
           <ul class="dropdown-menu">
-            <li><Link class="dropdown-item" to="#">Logout</Link></li>
+            <li><Link class="dropdown-item" to="/">Logout</Link></li>
             <li><Link class="dropdown-item" to="#">Edit Profile</Link></li>
           </ul>
         </li>
