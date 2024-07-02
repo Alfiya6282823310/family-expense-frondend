@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+.card-img-overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  border: none;
+}
+.accordion{
+  border: none;
+}
+.card-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

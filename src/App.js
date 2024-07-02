@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import SignIn from './Components/SignIn';
+import SignIn from './components/SignIn';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Signup from './Components/Signup';
-import Search from './Components/Search';
-import Add from './Components/Add';
+import Signup from './components/Signup';
+import Search from './components/Search';
+import Add from './components/Add';
+
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
      <Route path='/signup' element={<Signup/>}/>
      <Route path='/search' element={<Search/>}/>
      <Route path='/add' element={<Add/>}/>
+     
 
 
     </Routes>
