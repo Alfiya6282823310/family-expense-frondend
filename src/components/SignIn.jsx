@@ -20,7 +20,6 @@ const handleSubmit=async(event)=>{
       axios.post("http://localhost:8080/signin", data).then((response) => {
           console.log(response.data) 
           if(response.data.status === "success") {
-          alert("Successfully Signed In")
           localStorage.setItem('token',response.data.token)
           navigate('/home')
       } else {
