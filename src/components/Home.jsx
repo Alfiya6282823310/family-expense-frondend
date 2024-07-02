@@ -215,7 +215,7 @@ Practice Management Software||
                                 <div class="col-sm-6">
                                     <div class="card text-bg-success mb-3">
                                         <div class="card-body">
-                                            <h5 class="card-title">Budget Management</h5>
+                                            
                                             <p class="card-text">customizable spend controls</p>
                                         </div>
                                     </div>
@@ -224,7 +224,7 @@ Practice Management Software||
                                 <div class="col-sm-6">
                                     <div class="card text-bg-primary mb-3">
                                         <div class="card-body">
-                                            <h5 class="card-title">Mobile Application</h5>
+                                          
                                             <p class="card-text">easy transactions in real-time</p>
                                         </div>
                                     </div>
